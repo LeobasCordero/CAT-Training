@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/name_lbl"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:hint="Person&apos;s Name" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/nin"
+        android:text="@string/nin_lbl"
+        android:hint="NIN" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/passport"
+        android:text="@string/passport_lbl"
+        android:singleLine="true"
+        android:hint="Passport Number" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordUser"
+        android:text="@string/password_lbl"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordUserConfirm"
+        android:text="@string/confirm_lbl"
+        android:password="false"
+        android:hint="Confirm Password" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male_lbl"
+            android:id="@+id/radioBMale"
+            android:checked="true"
+            android:hint="Male"
+            android:enabled="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female_lbl"
+            android:id="@+id/radioBFemale"
+            android:enabled="true" />
+    </RadioGroup>
+
+</LinearLayout>
